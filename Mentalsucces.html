@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mental succes – Sanne Pedersen</title>
+  <meta name="description" content="Kombiner trivsel med høj præstation. Lær hvordan du skaber resultater uden at gå på kompromis med medarbejdernes velbefindende." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+ 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-text">
+          <img src="cropped-2.png" alt="Sanne Pedersen" class="brand-name" />
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Åbn menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primær navigation">
+        <a href="index.html">Forside</a>
+        <a href="om.html">Om</a>
+        <div class="dropdown">
+          <a href="services.html" class="dropbtn active">Services</a>
+          <div class="dropdown-menu">
+            <a href="Lederudvikling.html" >Lederudvikling</a>
+            <a href="Medarbejderudvikling.html">Medarbejderudvikling</a>
+            <a href="Mentalsucces.html" class="active">Mental succes</a>
+          </div>
+        </div>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a class="phone" href="tel:+4542261039">42261039</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="hero.png" alt="Mental succes" />
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p>Mental succes</p>
+        </div>
+      </div>
+    </section>
+    <section class="service-details">
+      <div class="container">
+        <div class="content-grid">
+          <div class="text-content">
+             <div style="display: grid; place-items: center; background-color: rgba(173, 173, 173, 0.199); width: 100vw; height: 150px; margin-left: calc(-46vw + 42%); margin-right: calc(-50vw + 50%);">
+            <h2>Mental succes</h2>
+            </div>
+
+            <div style="background-color: rgba(173, 173, 173, 0.199); width: 100vw; margin-left: calc(-46vw + 42%); margin-right: calc(-50vw + 50%); padding: 20px 0;">
+              <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px; margin-top: -50px;">
+                <p>Mental succes handler om at skabe et solidt fundament, hvor tanker, processer og perspektiver kan udfolde sig i et balanceret samspil. 
+                  Det er en løbende bevægelse, hvor udvikling og refleksion går hånd i hånd og danner grundlaget for en vedvarende fornemmelse af retning og fokus. 
+                  <p>Gennem en helhedsorienteret tilgang åbnes der for nye muligheder, der både rummer fleksibilitet og struktur i en samlet helhed.</p>
+              </div>
+            </div>
+               <br>
+               <br>
+          </div>
+            <div style="margin: 50px 0; padding: 40px; background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+              <h3 style="text-align: center; margin-bottom: 30px; color: #2d3748; font-size: 28px;">Resultater du kan forvente</h3>
+              <p style="text-align: center; margin-bottom: 40px; color: #4a5568; font-size: 18px;">Efter dette forløb vil du opleve:</p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Øget selvbevidsthed</strong> og klarhed om dine styrker</p>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Bedre balance</strong> mellem arbejdsliv og privatliv</p>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Stærkere relationer</strong> til medarbejdere og kolleger</p>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Mere effektiv</strong> beslutningstagning</p>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Øget motivation</strong> og arbejdsglæde</p>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-left: 4px solid var(--green-velvet);">
+                  <div style="width: 12px; height: 12px; background: var(--green-velvet); border-radius: 50%; margin-right: 15px; margin-top: 6px; flex-shrink: 0;"></div>
+                  <p style="margin: 0; color: #2d3748; line-height: 1.6;"><strong>Bæredygtige resultater</strong> for dig og din organisation</p>
+                </div>
+
+              </div>
+            </div>
+      
+      </div>
+    </section>
+
+    <section class="cta-section" style="margin-top: -100px;">
+      <div class="container">
+
+        <div style="background: #f8f9fa; padding: 40px; border-radius: 8px; text-align: center; border-left: 4px solid var(--green-velvet);">
+          <h2 style="margin: 0 0 20px; color: #000000;">Klar til mental succes?</h2>
+          <p>Lad os tale om hvordan du kan kombinere høj præstation med trivsel og skabe bæredygtige resultater..</p>
+          <div class="cta-buttons">
+            <a href="index.html#kontakt" class="btn primary">Kontakt mig</a>
+            <a href="tel:+4542261039" class="btn secondary">Ring direkte: 42261039</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="columns" style="background: var(--green-velvet); padding: 28px 100px 20px 340px; gap: 106px;">
+      <div style="line-height: 1.7;">
+        <h4 style="margin: 0 0 4px;">Kontakt</h4>
+        <p style="margin: 2px 0;">Sanne Pedersen</p>
+        <p style="margin: 2px 0;">CVR: 18168839</p>
+        <p style="margin: 2px 0;">Mobil: <a href="tel:+4542261039">42261039</a></p>
+      </div>
+      <div style="line-height: 1.7;">
+        <h4 style="margin: 0 0 4px;">Åbningstider</h4>
+        <p style="margin: 2px 0;">Hverdage: 8.00–17.00</p>
+        <p style="margin: 2px 0;">Weekend: Lukket</p>
+      </div>
+      <div style="line-height: 1.7;">
+        <h4 style="margin: 0 0 4px;">Info om samarbejdet</h4>
+        <ul class="link-list" style="margin: 0; padding: 0;">
+          <li style="margin: 2px 0;">Handelsbetingelser</li>
+          <li style="margin: 2px 0;">GDPR</li>
+          <li style="margin: 2px 0;">Forretningsbetingelser</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright" style="padding: 8px 0;">
+      Copyright © <span id="year"></span> Sanne Pedersen
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Til top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
