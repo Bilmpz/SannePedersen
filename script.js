@@ -1,22 +1,45 @@
 
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav-links');
-const dropdown = document.querySelector('.dropdown');
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav-links');
+  const dropdown = document.querySelector('.dropdown');
 
-toggle?.addEventListener('click', () => {
-  const expanded = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!expanded));
-  nav.classList.toggle('show');
-});
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('show');
+      console.log('Menu toggle clicked, expanded:', !expanded); // Debug log
+    });
 
+ 
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !toggle.contains(e.target) && nav.classList.contains('show')) {
+        nav.classList.remove('show');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
 
-document.querySelector('.dropbtn')?.addEventListener('click', (e) => {
-  if (window.matchMedia('(max-width: 860px)').matches) {
-    e.preventDefault();
-    dropdown.classList.toggle('open');
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('show')) {
+        nav.classList.remove('show');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  }
+
+  const dropBtn = document.querySelector('.dropbtn');
+  if (dropBtn && dropdown) {
+    dropBtn.addEventListener('click', (e) => {
+      if (window.matchMedia('(max-width: 860px)').matches) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      }
+    });
   }
 });
-
 
 const toTop = document.querySelector('.to-top');
 window.addEventListener('scroll', () => {

@@ -139,14 +139,19 @@ a  { color: inherit }
 }
 .dropdown:hover .dropdown-menu { display: flex }
 
-.menu-toggle { display: none; margin-left: auto; background: transparent; border: 0; cursor: pointer }
+.menu-toggle { display: none; margin-left: auto; background: transparent; border: 0; cursor: pointer; padding: 8px; }
+.menu-toggle:focus { outline: 2px solid #0066cc; outline-offset: 2px; }
 .menu-toggle span { display: block; width: 26px; height: 2px; background: #111; margin: 6px 0; transition: .2s }
+.menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
 
 @media (max-width: 860px) {
   .menu-toggle { display: block }
   .nav-links {
     position: fixed; inset: 72px 0 auto 0; background: #fff; border-top: 1px solid rgba(0,0,0,.06);
-    padding: 16px; display: none; flex-direction: column; gap: 8px;
+    padding: 16px; display: none; flex-direction: column; gap: 8px; z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .nav-links.show { display: flex }
   .dropdown:hover .dropdown-menu { display: none }
