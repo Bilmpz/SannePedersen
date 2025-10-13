@@ -1,5 +1,4 @@
 
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
@@ -90,7 +89,9 @@ form?.addEventListener('submit', (e) => {
   if (typeof emailjs !== 'undefined') {
     console.log('Sending email with data:', {
       to_email: recipientEmail,
-      from_name: data.firstName + ' ' + data.lastName,
+      from_name: data.name || (data.firstName + ' ' + data.lastName),
+      company: data.company || 'Ikke angivet',
+      desiredDate: data.desiredDate || 'Ikke angivet',
       from_email: data.email,
       phone: data.phone || 'Ikke angivet',
       message: data.message
@@ -98,7 +99,9 @@ form?.addEventListener('submit', (e) => {
     
     emailjs.send('service_msipssg', 'template_fc109gi', {
       to_email: recipientEmail,
-      from_name: data.firstName + ' ' + data.lastName,
+      from_name: data.name || (data.firstName + ' ' + data.lastName),
+      company: data.company || 'Ikke angivet',
+      desiredDate: data.desiredDate || 'Ikke angivet',
       from_email: data.email,
       phone: data.phone || 'Ikke angivet',
       message: data.message

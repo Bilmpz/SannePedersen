@@ -18,7 +18,7 @@
     <div class="container nav">
       <a href="#top" class="brand">
         <div class="brand-text">
-          <img src="cropped-2.png" alt="Sanne Pedersen" class="brand-name" />
+          <img src="Fyrtårn.jpg" alt="Sanne Pedersen" class="brand-name" />
         </div>
       </a>
       <button class="menu-toggle" aria-label="Åbn menu" aria-expanded="false">
@@ -35,7 +35,7 @@
             <a href="Mentalsucces.html">Mental succes</a>
           </div>
         </div>
-        <a href="index.html#kontakt">Kontakt</a>
+        <a href="kontakt.html">Kontakt</a>
         <a class="phone" href="tel:+4542261039">42261039</a>
       </nav>
     </div>
@@ -63,13 +63,11 @@
           </ul>
           <p>Hvis du søger et ledelsesudviklingsforløb, der går dybere end traditionelle metoder, så er du landet det rette sted.</p>
           <p class="hint">👉 <a href="#uddannelse">Læs om lederuddannelsen</a></p>
-          <a class="btn" href="#kontakt">Kontakt os her</a>
         </div>
         <div class="col portrait">
           <img class="avatar" src="cropped-Profilbillede2.jpg" alt="Portræt af Sanne" />
           <blockquote>
-            Jeg lærer ledere og organisationer at kende deres sind, bruge deres energi bevidst og skabe klarhed,
-            trivsel og resultater – både for dem selv og dem, de leder.
+                      <a class="btn" href="#kontakt">Kontakt os her</a>
           </blockquote>
         </div>
       </div>
@@ -85,7 +83,7 @@
               
         <div class="two-col">
           <div class="col">
-            <img src="Header-billede-scaled.jpg" alt="Sanne ved vindue" style="width: 100%; height: auto; border-radius: 0;" />
+            <img src="Header-billede-scaled.jpg" alt="Sanne ved vindue" style="width: 100%; height: auto; border-radius: 0; margin-top: 45px;" />
           </div>
           <div class="col">
 
@@ -107,7 +105,7 @@
                 <p>Kort sagt: At arbejde med selvindsigt og energi giver dig mulighed for at lede med <strong>klarhed, nærvær og gennemslagskraft</strong>, og skabe resultater, der gavner både dig selv, dine medarbejdere og din organisation.</p>
             </ul>
         
-            <a class="btn center" href="#kontakt" style="margin-top: 30px;">Kontakt os her</a>
+           
           </div>
         </div>
       </div>
@@ -147,40 +145,47 @@
 
     <section class="contact" id="kontakt" aria-label="Kontaktformular">
       <div class="container">
-        <form id="contactForm" novalidate>
-          <div class="grid">
+        <div class="contact-panel">
+          <div class="form-head">
+            <h2>Book et møde</h2>
+            <p class="lead">Send mig en besked om, hvad du har i tankerne,<br/>så vender jeg tilbage hurtigst muligt.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
             <div class="field">
-              <label for="firstName">Navn</label>
-              <input id="firstName" name="firstName" type="text" placeholder="Fornavn" required />
+              <label class="visually-hidden" for="name">Navn</label>
+              <input id="name" name="name" type="text" placeholder="Navn" required />
               <span class="error"></span>
             </div>
+
             <div class="field">
-              <label for="lastName">Efternavn</label>
-              <input id="lastName" name="lastName" type="text" placeholder="Efternavn" required />
+              <label class="visually-hidden" for="company">Virksomhed</label>
+              <input id="company" name="company" type="text" placeholder="Virksomhed" />
               <span class="error"></span>
             </div>
-          </div>
 
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="din@email.dk" required />
-            <span class="error"></span>
-          </div>
+            <div class="field">
+              <label class="visually-hidden" for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="E-mail" required />
+              <span class="error"></span>
+            </div>
 
-          <div class="field">
-            <label for="phone">Telefonnummer</label>
-            <input id="phone" name="phone" type="tel" placeholder="42 26 10 39" pattern="^[0-9 +()-]{6,}$" />
-            <span class="error"></span>
-          </div>
+            <div class="field">
+              <label class="visually-hidden" for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="Telefon" pattern="^[0-9 +()-]{6,}$" />
+              <span class="error"></span>
+            </div>
 
-          <div class="field">
-            <label for="message">Besked</label>
-            <textarea id="message" name="message" rows="6" placeholder="Skriv din besked her..." required></textarea>
-            <span class="error"></span>
-          </div>
-          <button type="submit" class="btn">Send</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+
+            <div class="field">
+              <label class="visually-hidden" for="message">Besked</label>
+              <textarea id="message" name="message" rows="6" placeholder="Besked..." required></textarea>
+              <span class="error"></span>
+            </div>
+            <button type="submit" class="btn" style="background-color:#f1cb50;color:#000000; cursor: pointer;">Send straks til Sanne</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
 
         <footer class="site-footer">
           <div class="columns">
@@ -198,9 +203,8 @@
             <div>
               <h4 style="margin: 0 0 4px;">Info om samarbejdet</h4>
               <ul class="link-list">
-                <li><a>Handelsbetingelser</a></li>
-                <li><a>GDPR</a></li>
-                <li><a>Forretningsbetingelser</a></li>
+          <li style="margin: 2px 0;">Cookie- &  privatlivspolitik</li>
+          <li style="margin: 2px 0;">Forretningsbetingelser</li>
               </ul>
             </div>
           </div>
