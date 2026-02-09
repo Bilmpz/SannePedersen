@@ -1,16 +1,16 @@
-# 🌟 Sanne Pedersen
+#  Sanne Pedersen
 
 Denne repo indeholder en **personlig hjemmeside** for Sanne Pedersen — lavet med HTML, CSS og lidt JavaScript.
 
 Siden består af flere undersider som:
 
-- 🏠 Forside (`index.html`)
-- ✉️ Kontakt (`kontakt.html`)
-- ℹ️ Om siden / om Sanne (`om.html`)
-- 📋 Services / ydelser (`services.html`)
+-  Forside (`index.html`)
+-  Kontakt (`kontakt.html`)
+-  Om siden / om Sanne (`om.html`)
+-  Services / ydelser (`services.html`)
 - Flere sider med indhold og billeder
 
-## 🎨 Design og indhold
+##  Design og indhold
 
 Siden bruger:
 
